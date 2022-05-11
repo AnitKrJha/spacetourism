@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+	font-family: "Bellefair", serif;
+	color: white;
+}
+body,
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	background-image: url(./assets/technology/background-technology-desktop.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	backdrop-filter: contrast(120%);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background-color: pink;
+	background-color: transparent;
+	padding: 2em 2em;
+}
+.navlinks {
+	color: white;
+	list-style: none;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-right: 13%;
+	padding-left: 7%;
+	gap: 4.5em;
+}
+
+.navlinks > a {
+	text-decoration: none;
+}
+
+.nav-link {
+	font-size: 1.11em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.75px;
+}
+
+.link:hover {
+	box-shadow: inset 0 -5px 0 rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: box-shadow 0.2s ease-out;
+}
+.link:active {
+	box-shadow: inset 0 -5px 0 white;
+}
+.nav-link span {
+	font-weight: bolder;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 700;
+}
+
+.intro {
+	font-size: 28px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 82%;
+	margin: auto;
+	letter-spacing: 4.35px;
+	margin-top: 3%;
+}
+.intro span {
+	font-family: "Barlow Condensed", sans-serif;
+	color: rgba(255, 255, 255, 0.4);
+	padding-right: 16px;
+}
+.container{
+	display: flex;
+	width: 90%;
+	margin-left:10%;
+
+}
+.left,.leftcontent{
+	display: flex;
+	width: 100%;
+}
+.right{
+	display: flex;
+	width: 100%;
+	justify-content: end;
+}
+.left{
+	padding-top: 10%;
+	gap: 10%;
+}
+.leftcontent{
+	flex-direction: column;
+	gap: 1em;
+	
+}
+.terminology{
+	font-family: 'Barlow Condensed',sans-serif;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	color: rgb(208,214,249);
+}
+.technology-name{
+	font-size: 56px;
+	letter-spacing: 4.75px;
+	text-transform: uppercase;
+	font-weight: 400;
+
+}
+.technology-brief{
+	width: 75%;
+	font-family: 'Barlow Condensed',sans-serif;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	color: rgb(208,214,249);
+	line-height: 25px;
+}
+.technology-img{
+	transform: scale(1.2);
+	filter: contrast(130%);
+}
+.choices{
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+.choice{
+	display: flex;
+	width: 50px;
+	aspect-ratio: 1/1;
+	background-color: transparent;
+	color:white;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+}
+.choice:hover{
+	border-color: #fff;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+}
+.choice:active{
+	background-color: #fff;
+	color: black;
+}
+.choice.current{
+	background-color: #fff;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active{
+    color: white;
+    box-shadow: inset 0 -5px 0 white;
+}
+.active:hover{
+    cursor: pointer;
+    box-shadow: inset 0 -5px 0 white;
+}

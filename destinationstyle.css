@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+	font-family: "Bellefair", serif;
+	color: white;
+}
+body,
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	background-image: url(./assets/destination/background-destination-desktop.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	backdrop-filter: contrast(120%);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background-color: pink;
+	background-color: transparent;
+	padding: 2em 2em;
+}
+.navlinks {
+	color: white;
+	list-style: none;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-right: 13%;
+	padding-left: 7%;
+	gap: 4.5em;
+}
+.navlinks > a {
+	text-decoration: none;
+}
+.nav-link {
+	font-size: 1.11em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.75px;
+}
+
+.link:hover {
+	box-shadow: inset 0 -5px 0 rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: box-shadow 0.2s ease-out;
+}
+.link:active {
+	box-shadow: inset 0 -5px 0 white;
+}
+.nav-link span {
+	font-weight: bolder;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 700;
+}
+
+.intro {
+	font-size: 28px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 82%;
+	margin: auto;
+	letter-spacing: 4.35px;
+	margin-top: 3%;
+}
+.intro span {
+	font-family: "Barlow Condensed", sans-serif;
+	color: rgba(255, 255, 255, 0.4);
+	padding-right: 16px;
+}
+.container{
+    padding-top: 8em;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.left{
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+.right{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+.planets{
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    gap: 2em;
+    margin-bottom: 2em; 
+}
+.planet{
+    padding:1em 0 ;
+    
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 2.75px;
+    color: rgba(255, 255, 255, 0.4);
+    
+}
+.planet.link:active{
+    color:white
+}
+.planetname{
+    font-size: 100px;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+.planetimg{
+    filter: contrast(120%)   brightness(90%) saturate(150%) ;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    
+}
+.planetbrief{
+    font-size: 18px;
+    width: 65%;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    padding-left: 0.7em;
+    color: rgb(208,214,249);
+}
+
+ hr{
+    margin-top: 4em;
+    margin-bottom: 1.5em;
+    width: 70%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 0.5px;
+}
+.foot{
+    
+    display: flex;
+    gap: 5.5em;
+    
+}
+.foot h1{
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.foot h3{
+    font-size: 14px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 300;
+    color: rgb(208,214,249);
+    letter-spacing: 2px;
+}
+.active{
+    color: white;
+    box-shadow: inset 0 -5px 0 white;
+}
+.active:hover{
+    cursor: pointer;
+    box-shadow: inset 0 -5px 0 white;
+}

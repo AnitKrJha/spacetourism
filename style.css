@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+	font-family: "Bellefair", serif;
+	color: white;
+}
+body,
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	background-image: url(./assets/home/background-home-desktop.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	backdrop-filter: contrast(120%);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background-color: pink;
+	background-color: transparent;
+	padding: 2em 2em;
+}
+.navlinks {
+	color: white;
+	list-style: none;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-right: 13%;
+	padding-left: 7%;
+	gap: 4.5em;
+}
+
+.navlinks > a {
+	text-decoration: none;
+}
+
+.nav-link {
+	font-size: 1.11em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.75px;
+}
+
+.link:hover {
+	box-shadow: inset 0 -5px 0 rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: box-shadow 0.2s ease-out;
+}
+.link:active {
+	box-shadow: inset 0 -5px 0 white;
+}
+.nav-link span {
+	font-weight: bolder;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 700;
+}
+
+.content {
+	margin: auto;
+	display: flex;
+	width: 80%;
+	height: 40%;
+	justify-content: space-between;
+	padding-top: 15em;
+	/* gap: 40%; */
+}
+.leftcontent {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 50%;
+}
+.leftcontent h3 {
+	font-size: 28px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 300;
+	color: rgb(208, 214, 249);
+	text-transform: uppercase;
+	letter-spacing: 4.75px;
+}
+.leftcontent h1 {
+	font-size: 10.5em;
+	margin-top: 3rem;
+	font-weight: 500;
+}
+.leftcontent p {
+	font-size: 18px;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 2px;
+	color: rgb(208, 214, 249);
+	line-height: 25px;
+	font-weight: 300;
+}
+.rightcontent {
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+	justify-content: end;
+	padding-right: 2%;
+}
+.explore {
+	display: flex;
+	width: 260px;
+	aspect-ratio: 1/1;
+	background-color: white;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: 2em;
+	transition: box-shadow 0.2s ease-in-out;
+}
+.explore:hover {
+	box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+}
+.active{
+    color: white;
+    box-shadow: inset 0 -5px 0 white;
+}
+.active:hover{
+    cursor: pointer;
+    box-shadow: inset 0 -5px 0 white;
+}

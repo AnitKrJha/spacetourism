@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+	font-family: "Bellefair", serif;
+	color: white;
+	
+}
+
+body,
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	background-image: url(./assets/crew/background-crew-desktop.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	backdrop-filter: contrast(120%);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background-color: pink;
+	background-color: transparent;
+	padding: 2em 2em;
+}
+.navlinks {
+	color: white;
+	list-style: none;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-right: 13%;
+	padding-left: 7%;
+	gap: 4.5em;
+}
+
+.navlinks > a {
+	text-decoration: none;
+}
+
+.nav-link {
+	font-size: 1.11em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: "Barlow Condensed", sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.75px;
+}
+
+.link:hover {
+	box-shadow: inset 0 -5px 0 rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: box-shadow 0.2s ease-out;
+}
+.link:active {
+	box-shadow: inset 0 -5px 0 white;
+}
+.nav-link span {
+	font-weight: bolder;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 700;
+}
+
+.intro {
+	font-size: 32px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 82%;
+	margin: auto;
+	letter-spacing: 4.35px;
+	margin-top: 3%;
+}
+.intro span {
+	font-family: "Barlow Condensed", sans-serif;
+	color: rgba(255, 255, 255, 0.4);
+	padding-right: 16px;
+}
+
+
+
+.container{
+  
+    display: flex;
+    width: 80%;
+    margin:0 auto;
+    /* gap: 10em; */
+}
+.right
+{
+    display: flex;
+    width: 100%;
+    
+}
+.crewtag{
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+}
+.crewname{
+    font-size: 56px;
+    font-weight: 400;
+}
+.left{
+    padding-top:8em ;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.crewbrief{
+    max-width: 65%;
+    font-size: 18px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 300;
+    color:rgb(208,214,249);
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding-bottom: 3em;
+}
+.crewimg{
+    transform: translateY(-20px) translateX(50px);
+}
+.choices{
+    display: flex;
+    
+    justify-content: space-between;
+	gap: 1.2em;
+}
+
+.choice{
+    width: 18px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.current{
+    background-color: #fff;
+}
+.current.choice:hover{
+	background-color: white;
+}
+.choice:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.choice:active{
+    background-color: white;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active{
+    color: white;
+    box-shadow: inset 0 -5px 0 white;
+}
+.active:hover{
+    cursor: pointer;
+    box-shadow: inset 0 -5px 0 white;
+}
